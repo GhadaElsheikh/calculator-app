@@ -1,15 +1,15 @@
 import 'package:calculator_app/widgets/power_button.dart';
 import 'package:flutter/material.dart';
 
-class PowerControls extends StatelessWidget {
-  const PowerControls({super.key});
+class PowerPanel extends StatelessWidget {
+  const PowerPanel({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Spacer(
-          flex: 1,
+          flex: 2,
         ),
         Row(
           mainAxisSize: MainAxisSize.min,

@@ -1,6 +1,7 @@
 import 'package:calculator_app/widgets/calculator_display.dart';
+import 'package:calculator_app/widgets/custom_button.dart';
 import 'package:calculator_app/widgets/custom_grid_view.dart';
-import 'package:calculator_app/widgets/power_controls.dart';
+import 'package:calculator_app/widgets/power_panel.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -23,11 +24,10 @@ class HomeView extends StatelessWidget {
             Expanded(
               flex: 2,
               child: Align(
-                  alignment: FractionalOffset(0.15, 0.0),
-                  child: PowerControls()),
+                  alignment: FractionalOffset(0.13, 0.0), child: PowerPanel()),
             ),
             Expanded(
-              flex: 6,
+              flex: 8,
               child: CustomGridView(),
             )
           ],
