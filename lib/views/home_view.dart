@@ -23,7 +23,7 @@ class HomeView extends StatelessWidget {
             Expanded(
               flex: 2,
               child: Align(
-                  // alignment: FractionalOffset(0.2, 0.8),
+                  alignment: FractionalOffset(0.15, 0.0),
                   child: PowerControls()),
             ),
             Expanded(

@@ -8,7 +8,7 @@ class CalculatorDisplay extends StatelessWidget {
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
     return Container(
-      width: w * 0.80,
+      width: w * 0.86,
       height: h * 0.1575,
       decoration: BoxDecoration(
         image: DecorationImage(
@@ -22,12 +22,16 @@ class CalculatorDisplay extends StatelessWidget {
           height: h * 0.065,
           child: SingleChildScrollView(
             scrollDirection: Axis.horizontal,
+            physics: NeverScrollableScrollPhysics(),
             reverse: true,
-            child: Text(
-              'place holder',
-              style: TextStyle(
-                fontFamily: 'digital-7',
-                fontSize: 42,
+            child: Align(
+              alignment: Alignment.centerRight,
+              child: Text(
+                'place holder',
+                style: TextStyle(
+                  fontFamily: 'digital-7',
+                  fontSize: 42,
+                ),
               ),
             ),
           ),
