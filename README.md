@@ -15,8 +15,9 @@ A simple and elegant **Calculator App** built with Flutter featuring a **skeuomo
 - **Math Expressions** – expression parsing and evaluation
 
 ## 📸 Screenshots
-![Screenshot 1](Screenshot_1757798771.png)  
-![Screenshot 2](Screenshot_1757798802.png)  
+![Screenshot 1](screenshots/Screenshot_1757798771.png)  
+![Screenshot 2](screenshots/Screenshot_1757798802.png)  
+
 
 ## How to Run
 1. `git clone https://github.com/your-username/flutter-calculator.git`  
