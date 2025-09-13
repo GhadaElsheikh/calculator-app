@@ -1,4 +1,6 @@
+import 'package:calculator_app/providers/input_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
@@ -32,16 +34,22 @@ class CustomButton extends StatelessWidget {
         ),
         shape: BoxShape.circle,
       ),
-      child: ElevatedButton(
-        onPressed: onPressed ?? () {},
-        style: ButtonStyle(
-          backgroundColor: WidgetStateProperty.all(Colors.transparent),
-        ),
-        child: Text(
-          text,
-          style: TextStyle(
-            color: textColor,
-            fontSize: 24,
+      child: IgnorePointer(
+        ignoring: !context.watch<InputProvider>().isEnabled,
+        child: ElevatedButton(
+          onPressed: onPressed ??
+              () {
+                context.read<InputProvider>().type(text);
+              },
+          style: ButtonStyle(
+            backgroundColor: WidgetStateProperty.all(Colors.transparent),
+          ),
+          child: Text(
+            text,
+            style: TextStyle(
+              color: textColor,
+              fontSize: 24,
+            ),
           ),
         ),
       ),

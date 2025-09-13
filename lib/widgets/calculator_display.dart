@@ -1,4 +1,6 @@
+import 'package:calculator_app/providers/input_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class CalculatorDisplay extends StatelessWidget {
   const CalculatorDisplay({super.key});
@@ -27,7 +29,7 @@ class CalculatorDisplay extends StatelessWidget {
             child: Align(
               alignment: Alignment.centerRight,
               child: Text(
-                'place holder',
+                context.watch<InputProvider>().text,
                 style: TextStyle(
                   fontFamily: 'digital-7',
                   fontSize: 42,

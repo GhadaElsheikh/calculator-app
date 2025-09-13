@@ -1,36 +1,41 @@
+import 'package:calculator_app/providers/input_provider.dart';
 import 'package:calculator_app/widgets/calculator_display.dart';
-import 'package:calculator_app/widgets/custom_button.dart';
 import 'package:calculator_app/widgets/custom_grid_view.dart';
 import 'package:calculator_app/widgets/power_panel.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart'; 
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Color(0xff485662),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 32.0, horizontal: 16),
-        child: Column(
-          children: [
-            Expanded(
-              flex: 3,
-              child: Align(
-                  alignment: Alignment.bottomCenter,
-                  child: CalculatorDisplay()),
-            ),
-            Expanded(
-              flex: 2,
-              child: Align(
-                  alignment: FractionalOffset(0.13, 0.0), child: PowerPanel()),
-            ),
-            Expanded(
-              flex: 8,
-              child: CustomGridView(),
-            )
-          ],
+    return ChangeNotifierProvider(
+      create: (context) => InputProvider(),
+      child: Scaffold(
+        backgroundColor: Color(0xff485662),
+        body: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 32.0, horizontal: 16),
+          child: Column(
+            children: [
+              Expanded(
+                flex: 3,
+                child: Align(
+                    alignment: Alignment.bottomCenter,
+                    child: CalculatorDisplay()),
+              ),
+              Expanded(
+                flex: 2,
+                child: Align(
+                    alignment: FractionalOffset(0.13, 0.0),
+                    child: PowerPanel()),
+              ),
+              Expanded(
+                flex: 8,
+                child: CustomGridView(),
+              )
+            ],
+          ),
         ),
       ),
     );

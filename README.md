@@ -1,16 +1,27 @@
-# calculator_app
+# Flutter Calculator App
 
-A new Flutter project.
+A simple and elegant **Calculator App** built with Flutter featuring a **skeuomorphic design** for a realistic look and feel.
 
-## Getting Started
+## Features
+- Basic arithmetic: `+`, `-`, `×`, `÷`
+- Memory functions: `M+`, `M-`, `MR/MC`
+- Clear (`C`) button
+- Expression evaluation using `math_expressions`
+- Smooth skeuomorphic UI design
 
-This project is a starting point for a Flutter application.
+## 🛠 Tech Stack
+- **Flutter** – cross-platform UI framework
+- **Provider** – state management
+- **Math Expressions** – expression parsing and evaluation
 
-A few resources to get you started if this is your first Flutter project:
+## 📸 Screenshots
+![Screenshot 1](Screenshot_1757798771.png)  
+![Screenshot 2](Screenshot_1757798802.png)  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## How to Run
+1. `git clone https://github.com/your-username/flutter-calculator.git`  
+2. `cd flutter-calculator`  
+3. `flutter pub get`  
+4. `flutter run`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Made with ❤️ by Ghada
