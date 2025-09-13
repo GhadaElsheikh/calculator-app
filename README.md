@@ -15,8 +15,11 @@ A simple and elegant **Calculator App** built with Flutter featuring a **skeuomo
 - **Math Expressions** – expression parsing and evaluation
 
 ## 📸 Screenshots
-![Screenshot 1](screenshots/Screenshot_1757798771.png)  
-![Screenshot 2](screenshots/Screenshot_1757798802.png)  
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <img src="screenshots/Screenshot_1757798771.png" style="width: 35%;">
+  <img src="screenshots/Screenshot_1757798802.png" style="width: 35%;">
+</div>
+
 
 
 ## How to Run
